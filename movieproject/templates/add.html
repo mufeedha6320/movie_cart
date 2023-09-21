@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table cellpadding="10" >
+        <tr> <th> <u> ADD NEW MOVIE </u> </th></tr>
+    <tr> <td><input type="text" name="name" placeholder="movie name"> </td></tr>
+    <tr> <td><input type="text" name="desc" placeholder="movie desc"> </td></tr>
+    <tr> <td><input type="text" name="year" placeholder="movie year"> </td></tr>
+    <tr> <td><input type="file" name="img" > </td></tr>
+    <tr> <td><input type="submit" > </td></tr>
+    </table>
+</form>
+{% endblock %}

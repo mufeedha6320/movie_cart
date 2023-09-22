@@ -10,7 +10,10 @@
 <body>
 <!-- As a heading -->
 <nav class="navbar navbar-dark bg-dark">
-  <span class="navbar-brand mb-0 h1">Online Movie Store </span>
+  <span class="navbar-brand mb-0 h1">Online Movie Store </span> 
+    <div class="nav-item">
+        <a class="nav-link btn btn-outline-success my-2" href="{% url 'movieapp:add_movie' %}">Add Movie</a>
+  </div>
 </nav> <br>
 <div class="container">
 {% block body %}
